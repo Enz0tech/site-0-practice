@@ -1,0 +1,141 @@
+:root {
+    --accent-color: #34547a;
+    --silver-color: #eeeff1;
+    --background-color: #f9f9f9;
+    --text-p-color: #727272;
+    --font-family-regular: "Roboto-Regular";
+    --font-family-medium: "Roboto-Medium";
+}
+
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url(../fonts/Roboto-Regular.woff2);
+}
+
+@font-face {
+    font-family: "Roboto-Medium";
+    src: url(../fonts/Roboto-Medium.woff2);
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    max-width: 1102px;
+    margin: 0 auto;
+}
+
+/* Начало стилей для текста */
+.text-h2 {
+    font-family: var(--font-family-medium);
+    font-size: 32px;
+}
+
+.text-p {
+    font-family: var(--font-family-regular);
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--text-p-color);
+}
+
+/* Конец стилей для текста */
+
+.header {
+    background-color: var(--background-color);
+    min-height: 700px;
+}
+
+.header__title {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 57px;
+    margin-bottom: 134px;
+}
+
+.logo {}
+
+.header__menu {
+}
+
+.nav {
+    display: flex;
+}
+
+.menu__item {
+    list-style: none;
+}
+
+.menu__item a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: var(--font-family-regular);
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.1em;
+    color: #000000;
+    padding-left: 44px;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: end;
+}
+
+.header__frame {
+    margin-left: 82px;
+    width: 357px;
+    height: 233px;
+}
+
+.header__text {
+    margin-left: 130px;
+}
+
+.text-h1 {
+    font-family: var(--font-family-medium);
+    font-size: 48px;
+    margin-bottom: 60px;
+}
+
+.text-p {
+    margin-bottom: 60px;
+}
+
+.button {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: var(--font-family-regular);
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.1em;
+    padding: 25px 41px;
+    background-color: var(--accent-color);
+    color: #ffffff;
+}
