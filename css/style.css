@@ -171,9 +171,8 @@ body {
 .numbers {
     min-height: 250px;
     background-color: var(--accent-color);
+    margin-bottom: 100px;
 }
-
-.numbers__container {}
 
 .numbers__flex {
     display: flex;
@@ -181,13 +180,11 @@ body {
     padding: 100px 0;
 }
 
-
 .flex__item {
     display: flex;
     align-items: center;
     margin-right: 49px;
 }
-
 
 .flex__item img {
     margin-right: 20px;
@@ -196,8 +193,6 @@ body {
 .flex__item:nth-child(6) {
     margin-right: 0;
 }
-
-.numbers__img {}
 
 .numbers__projects {
     font-family: var(--font-family-medium);
@@ -208,6 +203,54 @@ body {
 .numbers__p {
     color: #ffffff;
 }
+
+.skills {
+    margin-bottom: 100px;
+}
+
+.skills__container {
+    max-width: 1150px;
+}
+
+.skills__list {
+    margin-right: 135px;
+    padding-top: 72px;
+}
+
+.skills__flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skills__header {
+    margin-bottom: 33px;
+}
+
+.progress__bar {
+    display: flex;
+    width: 445px;
+    height: 4px;
+    margin-bottom: 30px;
+}
+
+.progress__bar-text {
+    margin-bottom: 20px;
+}
+
+.progress__bar-completed {
+    background-color: var(--accent-color);
+}
+
+.progress__bar-remaining {
+    background-color: #c4c4c4;
+}
+
+.skills__card {
+    width: 555px;
+    height: 450px;
+}
+
 
 @media screen and (max-width:1280px) {
     .container {
@@ -245,6 +288,19 @@ body {
 
     .flex__item:nth-child(6) {
         margin-bottom: 0;
+    }
+
+    .skills__flex {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .skills__list {
+        margin-right: 0;
+    }
+
+    .progress__bar {
+        width: 100%;
     }
 }
 
@@ -295,6 +351,19 @@ body {
     }
 }
 
+@media screen and (max-width:560px) {
+    .skills__card {
+        height: 400px;
+    }
+
+    .skills__list {
+        padding-top: 0;
+        margin-bottom: 20px;
+    }
+}
+
 @media screen and (max-width:452px) {
-    
+    .skills__card {
+        height: 300px;
+    }
 }
