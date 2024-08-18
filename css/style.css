@@ -30,6 +30,7 @@ html {
 img {
     display: block;
     max-width: 100%;
+    height: auto;
 }
 
 h1,
@@ -70,7 +71,7 @@ body {
 .header {
     background-color: var(--background-color);
     min-height: 700px;
-    margin-bottom: 115px;
+    margin-bottom: 80px;
 }
 
 .header__title {
@@ -246,11 +247,6 @@ body {
     background-color: #c4c4c4;
 }
 
-.skills__card {
-    width: 555px;
-    height: 450px;
-}
-
 
 @media screen and (max-width:1280px) {
     .container {
@@ -284,6 +280,7 @@ body {
 
     .flex__item {
         margin-bottom: 25px;
+        margin-right: 0;
     }
 
     .flex__item:nth-child(6) {
@@ -292,7 +289,7 @@ body {
 
     .skills__flex {
         flex-wrap: wrap;
-        flex-direction: column;
+        justify-content: center;
     }
 
     .skills__list {
@@ -304,6 +301,9 @@ body {
     }
 }
 
+
+/* Медиа запросы */
+
 @media screen and (max-width:852px) {
     .info__text {
         margin-bottom: 123px;
@@ -314,7 +314,7 @@ body {
     .header__title {
         flex-wrap: wrap;
         justify-content: center;
-        margin-bottom: 90px;
+        margin-bottom: 50px;
         align-items: center;
     }
 
@@ -352,9 +352,9 @@ body {
 }
 
 @media screen and (max-width:560px) {
-    .skills__card {
+    /* .skills__card {
         height: 400px;
-    }
+    } */
 
     .skills__list {
         padding-top: 0;
@@ -363,7 +363,7 @@ body {
 }
 
 @media screen and (max-width:452px) {
-    .skills__card {
+    /* .skills__card {
         height: 300px;
-    }
+    } */
 }
