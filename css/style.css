@@ -71,7 +71,7 @@ body {
 .header {
     background-color: var(--background-color);
     min-height: 700px;
-    margin-bottom: 80px;
+    margin-bottom: 110px;
 }
 
 .header__title {
@@ -247,6 +247,77 @@ body {
     background-color: #c4c4c4;
 }
 
+.video {
+    margin-bottom: 28px;
+    background-color: var(--background-color);
+}
+
+.video__container {
+    text-align: center;
+}
+
+.video__header {
+    padding-top: 100px;
+    margin-bottom: 50px;
+}
+
+.video__text {
+    width: 540px;
+    height: 67px;
+    margin: 0 auto 57px;
+}
+
+.video__video {
+    margin-bottom: 100px;
+}
+
+.projects {
+    margin-bottom: 72px;
+}
+
+.projects__container {
+    /* max-width: 1920px; */
+}
+
+.projects__flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* .projects__img {
+    opacity: 1;
+}
+
+.projects__img:hover {
+    
+    opacity: 0.5;
+
+}
+
+.img__view {
+    width: 480px;
+    height: 480px;
+    background-image: url(../img/projects-view.png);
+    background-color: #34547a;
+} */
+
+.clients {
+    margin-bottom: 100px;
+}
+
+.clients__flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+/* Медиа запросы */
 
 @media screen and (max-width:1280px) {
     .container {
@@ -292,17 +363,10 @@ body {
         justify-content: center;
     }
 
-    .skills__list {
-        margin-right: 0;
-    }
-
     .progress__bar {
         width: 100%;
     }
 }
-
-
-/* Медиа запросы */
 
 @media screen and (max-width:852px) {
     .info__text {
@@ -349,13 +413,26 @@ body {
     .about__text {
         width: 100%;
     }
+
+    .skills__list {
+        margin-right: 0;
+    }
+
+    .video__video {
+        width: 100%;
+    }
+
+    .projects__flex {
+        gap: 20px;
+    }
+
+    .clients__flex {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
 }
 
 @media screen and (max-width:560px) {
-    /* .skills__card {
-        height: 400px;
-    } */
-
     .skills__list {
         padding-top: 0;
         margin-bottom: 20px;
@@ -363,7 +440,7 @@ body {
 }
 
 @media screen and (max-width:452px) {
-    /* .skills__card {
-        height: 300px;
-    } */
+    .video__text {
+        width: 100%;
+    }
 }
