@@ -278,58 +278,16 @@ body {
 .projects__grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
     gap: 0;
 }
-
-/* .card_1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 480px;
-    height: 480px;
-    background-image: url(../img/projects-rectangle.jpg);
-    background-size: cover;
-    position: relative;
-}
-
-.card_2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 480px;
-    height: 480px;
-    background-image: url(../img/projects-rectangle-2.jpg);
-    background-size: cover;
-    position: relative;
-} */
-
-/* .card-view-icon {
-    z-index: 2;
-    opacity: 0;
-    transition: 0.5s ease;
-} */
-
-/* .card_1:hover .card-view-icon {
-    opacity: 1;
-}
-
-.card_1:hover .card-filter {
-    opacity: 0.8;
-} */
-
-/* .card_2:hover .card-view-icon {
-    opacity: 1;
-}
-
-.card_2:hover .card-filter {
-    opacity: 0.8;
-} */
 
 .projects__grid-item-1 {
     width: 480px;
     height: 480px;
     background-image: url(../img/projects-rectangle.jpg);
     position: relative;
+    cursor: zoom-in;
 }
 
 .projects__grid-item-2 {
@@ -337,6 +295,7 @@ body {
     height: 480px;
     background-image: url(../img/projects-rectangle-2.jpg);
     position: relative;
+    cursor: zoom-in;
 }
 
 .projects__img {
@@ -344,14 +303,35 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: 0.5s ease;
+    z-index: 2;
 }
 
-.card-filter {}
+.card-filter {
+    position: absolute;
+    inset: 0;
+    background-color: var(--accent-color);
+    opacity: 0;
+    transition: 0.5s ease;
+    z-index: 1;
+}
 
-.projects__grid-item-2 {}
+.projects__grid-item-1:hover .projects__img {
+    opacity: 1;
+}
 
+.projects__grid-item-1:hover .card-filter {
+    opacity: 0.7;
+}
 
+.projects__grid-item-2:hover .projects__img {
+    opacity: 1;
+}
 
+.projects__grid-item-2:hover .card-filter {
+    opacity: 0.7;
+}
 
 .clients {
     margin-bottom: 100px;
@@ -507,4 +487,18 @@ body {
     .video__text {
         width: 100%;
     }
+
+    .projects {
+        padding-inline: 15px;
+    }
+
+    .projects__grid-item-1 {
+        width: 100%;
+    }
+
+    .projects__grid-item-2 {
+        width: 100%;
+    }
+
+
 }
