@@ -275,32 +275,83 @@ body {
     margin-bottom: 72px;
 }
 
-.projects__container {
-    /* max-width: 1920px; */
+.projects__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
 }
 
-.projects__flex {
+/* .card_1 {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    align-items: center;
+    width: 480px;
+    height: 480px;
+    background-image: url(../img/projects-rectangle.jpg);
+    background-size: cover;
+    position: relative;
 }
 
-/* .projects__img {
+.card_2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 480px;
+    height: 480px;
+    background-image: url(../img/projects-rectangle-2.jpg);
+    background-size: cover;
+    position: relative;
+} */
+
+/* .card-view-icon {
+    z-index: 2;
+    opacity: 0;
+    transition: 0.5s ease;
+} */
+
+/* .card_1:hover .card-view-icon {
     opacity: 1;
 }
 
-.projects__img:hover {
-    
-    opacity: 0.5;
+.card_1:hover .card-filter {
+    opacity: 0.8;
+} */
 
+/* .card_2:hover .card-view-icon {
+    opacity: 1;
 }
 
-.img__view {
+.card_2:hover .card-filter {
+    opacity: 0.8;
+} */
+
+.projects__grid-item-1 {
     width: 480px;
     height: 480px;
-    background-image: url(../img/projects-view.png);
-    background-color: #34547a;
-} */
+    background-image: url(../img/projects-rectangle.jpg);
+    position: relative;
+}
+
+.projects__grid-item-2 {
+    width: 480px;
+    height: 480px;
+    background-image: url(../img/projects-rectangle-2.jpg);
+    position: relative;
+}
+
+.projects__img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card-filter {}
+
+.projects__grid-item-2 {}
+
+
+
 
 .clients {
     margin-bottom: 100px;
@@ -310,6 +361,7 @@ body {
     display: flex;
     justify-content: space-between;
 }
+
 
 
 
@@ -366,6 +418,20 @@ body {
     .progress__bar {
         width: 100%;
     }
+
+    .video__video {
+        width: 100%;
+    }
+
+    .projects__grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .clients__flex {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
 }
 
 @media screen and (max-width:852px) {
@@ -418,17 +484,15 @@ body {
         margin-right: 0;
     }
 
-    .video__video {
+    .video__text {
         width: 100%;
+        margin-bottom: 100px;
     }
 
-    .projects__flex {
+    .projects__grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
         gap: 20px;
-    }
-
-    .clients__flex {
-        flex-wrap: wrap;
-        justify-content: space-around;
     }
 }
 
