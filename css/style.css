@@ -342,6 +342,81 @@ body {
     justify-content: space-between;
 }
 
+.form {
+    background-color: var(--background-color);
+    padding-bottom: 100px;
+}
+
+.form__header {
+    text-align: center;
+    padding-top: 100px;
+    margin-bottom: 50px;
+}
+
+.form__text {
+    text-align: center;
+    width: 540px;
+    margin: 0 auto;
+    margin-bottom: 65px;
+}
+
+.form__wrapper {
+    width: 540px;
+    margin: 0 auto;
+}
+
+.form__flex {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.form__name input {
+    width: 255px;
+    height: 50px;
+    font-family: var(--font-family-regular);
+    font-size: 14px;
+}
+
+.form__mail input {
+    width: 255px;
+    height: 50px;
+    font-family: var(--font-family-regular);
+    font-size: 14px;
+}
+
+.form__message {
+    display: block;
+    margin: 0 auto 50px;
+    width: 540px;
+    height: 175px;
+    font-family: var(--font-family-regular);
+    font-size: 14px;
+}
+
+textarea::placeholder,
+.form__name input::placeholder,
+.form__mail input::placeholder {
+padding: 15px 0 0 20px;
+}
+
+.form__button {
+    display: block;
+    margin: 0 auto;
+    padding: 18px 42px;
+    font-family: var(--font-family-regular);
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 0.15em;
+    line-height: 23px;
+    color: #ffffff;
+    background-color: var(--accent-color);
+    border: 0;
+    cursor: pointer;    
+}
+
+
 
 
 
