@@ -138,12 +138,9 @@
                 <h2 class="video__header text-h2">Как я работаю</h2>
                 <p class="video__text text-p">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
                     Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
-                <iframe class="video__video" width="1102" height="600"
-                    src="https://www.youtube.com/embed/6PL2TqBdz0I?si=X410cvDgC8cHQ-oi" title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
+                <div class="container__video">
+                    <div class="video-wrapper"></div>
+                </div>
         </section>
 
         <section class="projects">
@@ -211,14 +208,36 @@
                             <input type="email" name="user-email" placeholder="Ваш e-mail">
                         </div>
                     </div>
-                    <textarea class="form__message" name="user-message" id="user-message" placeholder="Сообщение"></textarea>
+                    <textarea class="form__message" name="user-message" id="user-message"
+                        placeholder="Сообщение"></textarea>
                     <button class="form__button" type="submit">Отправить</button>
                 </form>
             </div>
-
         </section>
 
     </main>
+
+    <footer class="footer">
+
+        <div class="footer__wrapper">
+            <div class="footer__author">
+                <div class="author__name">Иванов Иван</div>
+                <div class="copyright">(с) 2018. Все права защищены.</div>
+            </div>
+
+            <div class="social__links">
+                <a href="http://vk.com" target="_blank" rel="noopener"><img src="img/social-link.svg"
+                        alt="social link"></a>
+                <a href="http://vk.com" target="_blank" rel="noopener"><img src="img/social-link.svg"
+                        alt="social link"></a>
+                <a href="http://vk.com" target="_blank" rel="noopener"><img src="img/social-link.svg"
+                        alt="social link"></a>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="js/main.js"></script>
 
 </body>
 
