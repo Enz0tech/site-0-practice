@@ -274,24 +274,22 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: #000000 2px solid;
-    border-radius: 5px;
+    background-image: url(../img/video-rectangle.png);
 }
 
 .video-wrapper {
     width: 100%;
     padding-top: 56.25%;
-    background-color: var(--text-p-color);
-    background: url(../img/play-circle.svg) no-repeat center;
-    background-size: 20%;
+    background: url(../img/play-button.svg) no-repeat center;
+    background-size: 8%;
     position: relative;
-    transition: 0.3s ease;
+    transition: 0.5s ease;
 }
 
 .video-wrapper:hover {
     cursor: pointer;
-    background-size: 22%;
-    transition: 0.3s ease;
+    background-size: 10%;
+    transition: 0.5s ease;
 }
 
 .video-wrapper iframe {

@@ -12,7 +12,9 @@ window.addEventListener('DOMContentLoaded', function () {
 
         video.classList.add('ready');
 
-        video.insertAdjacentHTML('afterbegin', '<iframe src="https://www.youtube.com/embed/6PL2TqBdz0I?si=X410cvDgC8cHQ-oi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>');
+        var src = video.dataset.src;
+
+        video.insertAdjacentHTML('afterbegin', '<iframe src="' + src + '" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>');
 
     });
 });
