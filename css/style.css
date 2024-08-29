@@ -281,7 +281,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(../img/video-rectangle.png);
+    background: url(../img/video-rectangle.png) no-repeat center;
 }
 
 .video-wrapper {
@@ -554,7 +554,8 @@ textarea::placeholder,
 
     .projects__grid {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 20px;
     }
 
     .clients__flex {
@@ -571,12 +572,6 @@ textarea::placeholder,
 @media screen and (max-width:852px) {
     .info__text {
         margin-bottom: 123px;
-    }
-
-    .projects__grid {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        gap: 20px;
     }
 }
 
@@ -654,6 +649,11 @@ textarea::placeholder,
 
     .projects {
         padding-inline: 15px;
+        padding-top: 100px;
+    }
+
+    .projects__grid {
+        justify-items: stretch;
     }
 
     .projects__grid-item-1 {
@@ -667,10 +667,9 @@ textarea::placeholder,
 
 
 
-/* Медиа галерея*/
+/* Медиа галерея */
 .materialboxed {
     display: block;
-    background-repeat: no-repeat;
     background-size: contain;
     cursor: -webkit-zoom-in;
     cursor: zoom-in;
