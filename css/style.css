@@ -19,6 +19,7 @@
 
 html {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 *,
@@ -151,6 +152,12 @@ body {
     padding: 25px 41px;
     background-color: var(--accent-color);
     color: #ffffff;
+    transition: 0.4s ease;
+}
+
+.button:hover {
+    background-color: #0d6fd7;
+    transition: 0.4s ease;
 }
 
 .about {
@@ -443,7 +450,14 @@ textarea::placeholder,
     background-color: var(--accent-color);
     border: 0;
     cursor: pointer;
+    transition: 0.4s ease;
 }
+
+.form__button:hover {
+    background-color: #0d6fd7;
+    transition: 0.4s ease;
+}
+
 
 .footer {
     background-color: var(--accent-color);
@@ -476,10 +490,16 @@ textarea::placeholder,
 
 .social__links a {
     margin-right: 20px;
+    transition: 0.4s ease;
 }
 
 .social__links a:nth-last-child(1) {
     margin-right: 0px;
+}
+
+.social__links a:hover {
+    transition: 0.4s ease;
+    transform: translateY(-20%);
 }
 
 /* Медиа запросы */
@@ -643,4 +663,60 @@ textarea::placeholder,
     .projects__grid-item-2 {
         width: 100%;
     }
+}
+
+
+
+/* Медиа галерея*/
+
+.materialboxed {
+    display: block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: -webkit-zoom-in;
+    cursor: zoom-in;
+    position: relative;
+    -webkit-transition: opacity .4s;
+    transition: opacity .4s;
+    -webkit-backface-visibility: hidden
+}
+
+.materialboxed:hover:not(.active) {
+    opacity: .8
+}
+
+.materialboxed.active {
+    cursor: -webkit-zoom-out;
+    cursor: zoom-out
+}
+
+#materialbox-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #292929;
+    z-index: 1000;
+    will-change: opacity
+}
+
+.materialbox-caption {
+    position: fixed;
+    display: none;
+    color: #fff;
+    line-height: 50px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 0% 15%;
+    height: 50px;
+    z-index: 1000;
+    -webkit-font-smoothing: antialiased
+}
+
+.carousel.scrolling .carousel-item .materialboxed,
+.carousel .carousel-item:not(.active) .materialboxed {
+    pointer-events: none
 }

@@ -12,22 +12,17 @@
 <body>
 
     <header class="header">
+
         <div class="header__container container">
             <div class="header__title">
-                <a href="#" target="_blank" rel="noopener noreferrer"><img src="img/logo.svg" alt="Logo"
-                        class="logo"></a>
+                <a href="#" rel="noopener noreferrer"><img src="img/logo.svg" alt="Logo" class="logo"></a>
                 <nav class="header__menu">
                     <ul class="nav">
-                        <li class="menu__item"><a href="#" target="_blank" rel="noopener noreferrer">Главная</a>
-                        </li>
-                        <li class="menu__item"><a href="#" target="_blank" rel="noopener noreferrer">Об авторе</a>
-                        </li>
-                        <li class="menu__item"><a href="#" target="_blank" rel="noopener noreferrer">Работы</a>
-                        </li>
-                        <li class="menu__item"><a href="#" target="_blank" rel="noopener noreferrer">Процесс</a>
-                        </li>
-                        <li class="menu__item"><a href="#" target="_blank" rel="noopener noreferrer">Контакты</a>
-                        </li>
+                        <li class="menu__item"><a href="#" rel="noopener noreferrer">Главная</a></li>
+                        <li class="menu__item"><a href="#about" rel="noopener noreferrer">Об авторе</a></li>
+                        <li class="menu__item"><a href="#numbers" rel="noopener noreferrer">Работы</a></li>
+                        <li class="menu__item"><a href="#video" rel="noopener noreferrer">Процесс</a></li>
+                        <li class="menu__item"><a href="#footer" rel="noopener noreferrer">Контакты</a></li>
                     </ul>
                 </nav>
             </div>
@@ -38,15 +33,16 @@
                     <p class="info__text text-p">Lorem Ipsum - это текст-"рыба", часто используемый в печати и
                         вэб-дизайне. Lorem
                         Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
-                    <a class="button" href="#" target="_blank" rel="noopener noreferrer">Написать мне</a>
+                    <a class="button" href="mailto:example@mail.ru&body=Здравствуйте!&subject=У меня к вам предложение" rel="noopener noreferrer">Написать мне</a>
                 </div>
             </div>
         </div>
+
     </header>
 
     <main>
 
-        <section class="about">
+        <section class="about" id="about">
             <div class="about__container container">
                 <div class="about__info">
                     <h2 class="about__title text-h2">Обо мне</h2>
@@ -57,7 +53,7 @@
             </div>
         </section>
 
-        <section class="numbers">
+        <section class="numbers" id="numbers">
             <div class="numbers__container container">
                 <div class="numbers__flex">
                     <div class="flex__item">
@@ -133,7 +129,7 @@
             </div>
         </section>
 
-        <section class="video">
+        <section class="video" id="video">
             <div class="video__container container">
                 <h2 class="video__header text-h2">Как я работаю</h2>
                 <p class="video__text text-p">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
@@ -144,41 +140,43 @@
         </section>
 
         <section class="projects">
-            <div class="projects__grid">
-                <div class="projects__grid-item-1">
-                    <img class="projects__img" src="img/projects-view.png" alt="eye icon image">
-                    <div class="card-filter"></div>
-                </div>
-                <div class="projects__grid-item-2">
-                    <img class="projects__img" src="img/projects-view.png" alt="eye icon image">
-                    <div class="card-filter"></div>
-                </div>
-                <div class="projects__grid-item-1">
-                    <img class="projects__img" src="img/projects-view.png" alt="eye icon image">
-                    <div class="card-filter"></div>
-                </div>
-                <div class="projects__grid-item-2">
-                    <img class="projects__img" src="img/projects-view.png" alt="eye icon image">
-                    <div class="card-filter"></div>
-                </div>
 
-                <div class="projects__grid-item-2">
-                    <img class="projects__img" src="img/projects-view.png" alt="eye icon image">
-                    <div class="card-filter"></div>
+                <div class="projects__grid">
+                    <div class="projects__grid-item-1 materialboxed">
+                        <img class="projects__img" src="img/projects-view.png" alt="eye icon image">
+                        <div class="card-filter"></div>
+                    </div>
+                    <div class="projects__grid-item-2 materialboxed">
+                        <img class="projects__img" src="img/projects-view.png" alt="eye icon image">
+                        <div class="card-filter"></div>
+                    </div>
+                    <div class="projects__grid-item-1 materialboxed">
+                        <img class="projects__img" src="img/projects-view.png" alt="eye icon image">
+                        <div class="card-filter"></div>
+                    </div>
+                    <div class="projects__grid-item-2 materialboxed">
+                        <img class="projects__img" src="img/projects-view.png" alt="eye icon image">
+                        <div class="card-filter"></div>
+                    </div>
+    
+                    <div class="projects__grid-item-2 materialboxed">
+                        <img class="projects__img" src="img/projects-view.png" alt="eye icon image">
+                        <div class="card-filter"></div>
+                    </div>
+                    <div class="projects__grid-item-1 materialboxed">
+                        <img class="projects__img" src="img/projects-view.png" alt="eye icon image">
+                        <div class="card-filter"></div>
+                    </div>
+                    <div class="projects__grid-item-2 materialboxed">
+                        <img class="projects__img" src="img/projects-view.png" alt="eye icon image">
+                        <div class="card-filter"></div>
+                    </div>
+                    <div class="projects__grid-item-1 materialboxed">
+                        <img class="projects__img" src="img/projects-view.png" alt="eye icon image">
+                        <div class="card-filter"></div>
+                    </div>
                 </div>
-                <div class="projects__grid-item-1">
-                    <img class="projects__img" src="img/projects-view.png" alt="eye icon image">
-                    <div class="card-filter"></div>
-                </div>
-                <div class="projects__grid-item-2">
-                    <img class="projects__img" src="img/projects-view.png" alt="eye icon image">
-                    <div class="card-filter"></div>
-                </div>
-                <div class="projects__grid-item-1">
-                    <img class="projects__img" src="img/projects-view.png" alt="eye icon image">
-                    <div class="card-filter"></div>
-                </div>
-            </div>
+            
         </section>
 
         <section class="clients">
@@ -202,14 +200,13 @@
                 <form action="" method="get">
                     <div class="form__flex">
                         <div class="form__name">
-                            <input type="text" name="user-name" placeholder="Ваше имя">
+                            <input type="text" name="user-name" placeholder="Ваше имя" required>
                         </div>
                         <div class="form__mail">
-                            <input type="email" name="user-email" placeholder="Ваш e-mail">
+                            <input type="email" name="user-email" placeholder="Ваш e-mail" required >
                         </div>
                     </div>
-                    <textarea class="form__message" name="user-message" id="user-message"
-                        placeholder="Сообщение"></textarea>
+                    <textarea class="form__message" name="user-message" id="user-message" placeholder="Сообщение" required></textarea>
                     <button class="form__button" type="submit">Отправить</button>
                 </form>
             </div>
@@ -217,7 +214,7 @@
 
     </main>
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
 
         <div class="footer__wrapper">
             <div class="footer__author">
@@ -226,17 +223,18 @@
             </div>
 
             <div class="social__links">
-                <a href="http://vk.com" target="_blank" rel="noopener"><img src="img/social-link.svg"
+                <a href="http://vk.com" target="_blank" rel="noopener noreferrer"><img src="img/social-link.svg"
                         alt="social link"></a>
-                <a href="http://vk.com" target="_blank" rel="noopener"><img src="img/social-link.svg"
+                <a href="http://vk.com" target="_blank" rel="noopener noreferrer"><img src="img/social-link.svg"
                         alt="social link"></a>
-                <a href="http://vk.com" target="_blank" rel="noopener"><img src="img/social-link.svg"
+                <a href="http://vk.com" target="_blank" rel="noopener noreferrer"><img src="img/social-link.svg"
                         alt="social link"></a>
             </div>
         </div>
 
     </footer>
 
+    <script type="text/javascript" src="js/materialize.min.js"></script>
     <script src="js/main.js"></script>
 
 </body>
