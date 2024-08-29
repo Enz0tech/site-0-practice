@@ -668,7 +668,6 @@ textarea::placeholder,
 
 
 /* Медиа галерея*/
-
 .materialboxed {
     display: block;
     background-repeat: no-repeat;
@@ -678,7 +677,7 @@ textarea::placeholder,
     position: relative;
     -webkit-transition: opacity .4s;
     transition: opacity .4s;
-    -webkit-backface-visibility: hidden
+    backface-visibility: hidden;
 }
 
 .materialboxed:hover:not(.active) {
