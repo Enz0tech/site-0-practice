@@ -66,7 +66,6 @@ body {
     line-height: 26px;
     color: var(--text-p-color);
 }
-
 /* Конец стилей для текста */
 
 .header {
@@ -314,61 +313,45 @@ body {
 .projects__grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    justify-items: center;
-    justify-content: center;
     gap: 0;
+    max-width: 1920px;
 }
 
-
-.projects__grid-item-1 {
-    width: 480px;
-    height: 480px;
-    background-image: url(../img/projects-rectangle.jpg);
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
-    cursor: zoom-in;
 }
 
-.projects__grid-item-2 {
-    width: 480px;
-    height: 480px;
-    background-image: url(../img/projects-rectangle-2.jpg);
-    position: relative;
-    cursor: zoom-in;
-}
-
-.projects__img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    transition: 0.5s ease;
+.main-img {
     z-index: 2;
 }
 
-.card-filter {
+.view-img {
     position: absolute;
-    inset: 0;
-    background-color: var(--accent-color);
+    z-index: 1;
     opacity: 0;
     transition: 0.5s ease;
-    z-index: 1;
 }
 
-.projects__grid-item-1:hover .projects__img {
+.overlay {
+    background-color: var(--accent-color);
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: 0.5s ease;
+}
+
+.card:hover .view-img,
+.overlay {
     opacity: 1;
+    transition: 0.5s ease;
 }
 
-.projects__grid-item-1:hover .card-filter {
-    opacity: 0.7;
-}
-
-.projects__grid-item-2:hover .projects__img {
+.card:hover .overlay {
     opacity: 1;
-}
-
-.projects__grid-item-2:hover .card-filter {
-    opacity: 0.7;
+    transition: 0.5s ease;
 }
 
 .clients {
@@ -511,14 +494,9 @@ textarea::placeholder,
     transform: translateY(-20%);
 }
 
-/* Медиа запросы */
 
-@media screen and (max-width:1700px){
-    .projects__grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-    }
-}
+
+/* Медиа запросы */
 
 @media screen and (max-width:1280px) {
     .container {
@@ -569,9 +547,7 @@ textarea::placeholder,
     }
 
     .projects__grid {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        row-gap: 20px;
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .clients__flex {
@@ -640,6 +616,10 @@ textarea::placeholder,
         margin-bottom: 100px;
     }
 
+    .projects__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .form__text {
         width: 100%;
     }
@@ -669,15 +649,7 @@ textarea::placeholder,
     }
 
     .projects__grid {
-        justify-items: stretch;
-    }
-
-    .projects__grid-item-1 {
-        width: 100%;
-    }
-
-    .projects__grid-item-2 {
-        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .footer__wrapper {
@@ -698,7 +670,7 @@ textarea::placeholder,
 /* Медиа галерея */
 .materialboxed {
     display: block;
-    background-size: contain;
+    background-size: cover;
     cursor: -webkit-zoom-in;
     cursor: zoom-in;
     position: relative;
@@ -708,7 +680,7 @@ textarea::placeholder,
 }
 
 .materialboxed:hover:not(.active) {
-    opacity: .8
+    opacity: .4
 }
 
 .materialboxed.active {
