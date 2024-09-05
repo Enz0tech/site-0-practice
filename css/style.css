@@ -67,14 +67,17 @@ body {
     color: var(--text-p-color);
 }
 
-/* Конец стилей для текста */
+.header {
+    background-color: var(--background-color);
+    min-height: 700px;
+    margin-bottom: 110px;
+}
 
-/* test */
-.header-test {
+.header-burger__menu {
     width: 100%;
 }
 
-.container-test {
+.container-burger__menu {
     padding-inline: 15px;
 }
 
@@ -85,130 +88,16 @@ body {
     height: 100px;
 }
 
+.header__burger {
+    display: none;
+}
+
 .logo {
     z-index: 5;
 }
 
 .logo img {
     max-width: 100%;
-}
-
-.header__burger {
-    display: none;
-}
-
-.nav {
-    position: relative;
-    z-index: 4;
-}
-
-@media (max-width:768px) {
-
-    body.lock {
-        overflow: hidden;
-    }
-
-    .container-test {
-        position: fixed;
-        width: 100%;
-        background-color: #0d6fd7;
-        z-index: 20;
-    }
-
-    .header__burger {
-        display: block;
-        position: relative;
-        width: 30px;
-        height: 20px;
-        z-index: 3;
-    }
-
-    .header__burger span {
-        position: absolute;
-        background-color: #000000;
-        position: absolute;
-        left: 0;
-        top: 9px;
-        width: 100%;
-        height: 2px;
-        transition: 0.3s ease;
-    }
-
-    .header__burger:before,
-    .header__burger:after {
-        content: "";
-        background-color: #000000;
-        position: absolute;
-        left: 0;
-        width: 100%;
-        height: 2px;
-        transition: 0.3s ease;
-    }
-
-    .header__burger:before {
-        top: 0;
-    }
-
-    .header__burger:after {
-        bottom: 0;
-    }
-
-    .header__burger.active span {
-        transform: scale(0);
-    }
-
-    .header__burger.active:before {
-        transform: rotate(45deg);
-        top: 9px;
-    }
-
-    .header__burger.active:after {
-        transform: rotate(-45deg);
-        bottom: 9px;
-    }
-
-    .header__menu-test {
-        position: fixed;
-        top: 0;
-        left: -100%;
-        overflow: auto;
-        width: 100%;
-        height: 100%;
-        background-color: #0d6fd7;
-        padding: 100px 10px 20px 10px;
-        transition: 0.3s ease;
-    }
-
-    .header__menu-test.active {
-        left: 0;
-    }
-
-    .nav {
-        flex-direction: column;
-    }
-
-    .nav li {
-        padding: 15px 0;
-    }
-
-    .menu__item a {
-        font-size: 24px;
-    }
-
-}
-
-/* test */
-
-
-
-
-
-
-
-.header {
-    background-color: var(--background-color);
-    min-height: 700px;
-    margin-bottom: 110px;
 }
 
 .header__title {
@@ -221,6 +110,8 @@ body {
 .nav {
     display: flex;
     padding: 0;
+    position: relative;
+    z-index: 4;
 }
 
 .menu__item {
@@ -252,6 +143,7 @@ body {
 .header__inner {
     display: flex;
     justify-content: center;
+    padding-top: 100px;
 }
 
 .header__frame {
@@ -705,6 +597,98 @@ textarea::placeholder,
 }
 
 @media screen and (max-width:768px) {
+
+    body.lock {
+        overflow: hidden;
+    }
+
+    .container-burger__menu {
+        position: fixed;
+        width: 100%;
+        background-color: #0d6fd7;
+        z-index: 20;
+    }
+
+    .header__burger {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        z-index: 3;
+    }
+
+    .header__burger span {
+        position: absolute;
+        background-color: #000000;
+        position: absolute;
+        left: 0;
+        top: 9px;
+        width: 100%;
+        height: 2px;
+        transition: 0.3s ease;
+    }
+
+    .header__burger:before,
+    .header__burger:after {
+        content: "";
+        background-color: #000000;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        transition: 0.3s ease;
+    }
+
+    .header__burger:before {
+        top: 0;
+    }
+
+    .header__burger:after {
+        bottom: 0;
+    }
+
+    .header__burger.active span {
+        transform: scale(0);
+    }
+
+    .header__burger.active:before {
+        transform: rotate(45deg);
+        top: 9px;
+    }
+
+    .header__burger.active:after {
+        transform: rotate(-45deg);
+        bottom: 9px;
+    }
+
+    .header__menu {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        overflow: auto;
+        width: 100%;
+        height: 100%;
+        background-color: #0d6fd7;
+        padding: 100px 10px 20px 10px;
+        transition: 0.3s ease;
+    }
+
+    .header__menu.active {
+        left: 0;
+    }
+
+    .nav {
+        flex-direction: column;
+    }
+
+    .nav li {
+        padding: 15px 0;
+    }
+
+    .menu__item a {
+        font-size: 24px;
+    }
+
     .header__title {
         flex-wrap: wrap;
         justify-content: center;

@@ -3,7 +3,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
 
     var burger = document.querySelector('.header__burger');
-    var burger_menu = document.querySelector('.header__menu-test');
+    var burger_menu = document.querySelector('.header__menu');
     var body = document.querySelector('body');
     
     burger.addEventListener('click', function () {
@@ -15,11 +15,11 @@ window.addEventListener('DOMContentLoaded', function () {
 
     });
 
-    
 
-    var menu_item = document.querySelector('.nav');
 
-    menu_item.addEventListener('click', function() {
+    var close_menu = document.querySelector('.nav');
+
+    close_menu.addEventListener('click', function() {
 
         burger.classList.remove('active');
         burger_menu.classList.remove('active');
