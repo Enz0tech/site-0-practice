@@ -1,7 +1,37 @@
 window.addEventListener('DOMContentLoaded', function () {
 
+
+
+    var burger = document.querySelector('.header__burger');
+    var burger_menu = document.querySelector('.header__menu-test');
+    var body = document.querySelector('body');
+    
+    burger.addEventListener('click', function () {
+
+        burger.classList.toggle('active');
+        burger_menu.classList.toggle('active');
+        body.classList.toggle('lock');
+
+
+    });
+
+    
+
+    var menu_item = document.querySelector('.nav');
+
+    menu_item.addEventListener('click', function() {
+
+        burger.classList.remove('active');
+        burger_menu.classList.remove('active');
+        body.classList.remove('lock');
+
+    });
+
+
+
     var gallery = document.querySelectorAll('.materialboxed');
     var instances_gallery = M.Materialbox.init(gallery);
+
 
 
     var video = document.querySelector('.video-wrapper');
