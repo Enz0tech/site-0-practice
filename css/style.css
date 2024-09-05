@@ -66,6 +66,7 @@ body {
     line-height: 26px;
     color: var(--text-p-color);
 }
+/* Конец стилей для текста */
 
 .header {
     background-color: var(--background-color);
@@ -123,7 +124,7 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     font-family: var(--font-family-regular);
-    /* font-size: 16px; */
+    font-size: 16px;
     line-height: 26px;
     letter-spacing: 0.1em;
     color: #000000;
